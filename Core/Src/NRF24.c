@@ -220,6 +220,7 @@ uint8_t NRF24L01_Send(uint8_t *pBuf)
 	return regval;
 }
 //------------------------------------------------
+/*
 char str_rx[64];
 void NRF24L01_Receive(void)
 {
@@ -243,6 +244,7 @@ void NRF24L01_Receive(void)
     NRF24_WriteReg(STATUS, 0x40);
   }	
 }
+*/
 
 uint8_t isChipConnected(void)
 {

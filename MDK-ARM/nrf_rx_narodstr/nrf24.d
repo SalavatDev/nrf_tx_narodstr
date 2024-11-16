@@ -25,6 +25,7 @@ nrf_rx_narodstr\nrf24.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_corte
 nrf_rx_narodstr\nrf24.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 nrf_rx_narodstr\nrf24.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 nrf_rx_narodstr\nrf24.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+nrf_rx_narodstr\nrf24.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
 nrf_rx_narodstr\nrf24.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 nrf_rx_narodstr\nrf24.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 nrf_rx_narodstr\nrf24.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

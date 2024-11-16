@@ -25,8 +25,11 @@ nrf_rx_narodstr\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex
 nrf_rx_narodstr\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 nrf_rx_narodstr\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 nrf_rx_narodstr\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+nrf_rx_narodstr\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
 nrf_rx_narodstr\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 nrf_rx_narodstr\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+nrf_rx_narodstr\main.o: ../Core/Inc/dma.h
+nrf_rx_narodstr\main.o: ../Core/Inc/spi.h
 nrf_rx_narodstr\main.o: ../Core/Inc/tim.h
 nrf_rx_narodstr\main.o: ../Core/Inc/gpio.h
 nrf_rx_narodstr\main.o: ../Core/Inc/NRF24.h

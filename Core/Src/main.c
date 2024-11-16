@@ -18,6 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
+#include "spi.h"
 #include "tim.h"
 #include "gpio.h"
 
@@ -52,7 +54,7 @@ uint16_t tx_buf;
 
 uint8_t retr_cnt, dt;
 uint16_t i=1,retr_cnt_full;
-
+uint16_t rxSpiDataAngle=0;
 uint8_t dt_reg=0;
 /* USER CODE END PV */
 
@@ -65,6 +67,7 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+ 
 /* USER CODE END 0 */
 
 /**
@@ -96,7 +99,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_TIM2_Init();
+  MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 	HAL_TIM_Base_Start(&htim2);
 	HAL_Delay(200);
@@ -104,7 +109,7 @@ int main(void)
 	NRF24_ini();
 	 
 	HAL_Delay(1000);
-
+  HAL_SPI_Receive_DMA(&hspi2, (uint8_t*) &rxSpiDataAngle, 1);
 /*
   dt_reg = NRF24_ReadReg(CONFIG);
  
@@ -139,7 +144,7 @@ int main(void)
 		 
 		dt = NRF24L01_Send((uint8_t*)&tx_buf);
 		tx_buf++;
- 
+ //   HAL_SPI_Receive(&hspi2, (uint8_t*)&rxSpiDataAngle, 1, 100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
