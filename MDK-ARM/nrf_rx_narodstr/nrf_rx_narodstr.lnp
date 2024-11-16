@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"nrf_rx_narodstr\startup_stm32f103xb.o"
+"nrf_rx_narodstr\main.o"
+"nrf_rx_narodstr\gpio.o"
+"nrf_rx_narodstr\tim.o"
+"nrf_rx_narodstr\stm32f1xx_it.o"
+"nrf_rx_narodstr\stm32f1xx_hal_msp.o"
+"nrf_rx_narodstr\nrf24.o"
+"nrf_rx_narodstr\stm32f1xx_hal_gpio_ex.o"
+"nrf_rx_narodstr\stm32f1xx_hal_tim.o"
+"nrf_rx_narodstr\stm32f1xx_hal_tim_ex.o"
+"nrf_rx_narodstr\stm32f1xx_hal.o"
+"nrf_rx_narodstr\stm32f1xx_hal_rcc.o"
+"nrf_rx_narodstr\stm32f1xx_hal_rcc_ex.o"
+"nrf_rx_narodstr\stm32f1xx_hal_gpio.o"
+"nrf_rx_narodstr\stm32f1xx_hal_dma.o"
+"nrf_rx_narodstr\stm32f1xx_hal_cortex.o"
+"nrf_rx_narodstr\stm32f1xx_hal_pwr.o"
+"nrf_rx_narodstr\stm32f1xx_hal_flash.o"
+"nrf_rx_narodstr\stm32f1xx_hal_flash_ex.o"
+"nrf_rx_narodstr\stm32f1xx_hal_exti.o"
+"nrf_rx_narodstr\system_stm32f1xx.o"
+--strict --scatter "nrf_rx_narodstr\nrf_rx_narodstr.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "nrf_rx_narodstr.map" -o nrf_rx_narodstr\nrf_rx_narodstr.axf
