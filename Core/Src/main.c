@@ -52,10 +52,10 @@ char str1[20]={0};
 
 uint16_t tx_buf;
 
-uint8_t retr_cnt, dt;
-uint16_t i=1,retr_cnt_full;
+//uint8_t retr_cnt, dt;
+//uint16_t i=1,retr_cnt_full;
 uint16_t rxSpiDataAngle=0;
-uint8_t dt_reg=0;
+//uint8_t dt_reg=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -140,10 +140,10 @@ int main(void)
   while (1)
   {
 		
-		HAL_Delay(500); 
+		DelayMicro(1200); 
 		 
-		dt = NRF24L01_Send((uint8_t*)&tx_buf);
-		tx_buf++;
+	  NRF24L01_Send((uint8_t*)&rxSpiDataAngle);
+		 
  //   HAL_SPI_Receive(&hspi2, (uint8_t*)&rxSpiDataAngle, 1, 100);
     /* USER CODE END WHILE */
 

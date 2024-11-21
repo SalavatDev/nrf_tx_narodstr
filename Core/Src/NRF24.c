@@ -206,7 +206,7 @@ uint8_t NRF24L01_Send(uint8_t *pBuf)
 	status = NRF24_ReadReg(STATUS);
 	if(status&TX_DS) //tx_ds == 0x20
 	{
-		LED_TGL;
+		//LED_TGL;
 		NRF24_WriteReg(STATUS, 0x20);
 	}
 	else if(status&MAX_RT)
